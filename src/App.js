@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HomePage from "./pages/homePage";
+import { FaHeart } from "react-icons/fa";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div>
+      <HomePage />
+      <footer>
+        Crafted with <FaHeart /> by{" "}
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://www.linkedin.com/in/venkateshkamath08/"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          Learn React
+          <span>VK</span>
         </a>
-      </header>
+      </footer>
+      <h5 style={{ textAlign: "center" }}>
+        All the logos used and the entire design copyright goes to CRED. This
+        website is only for learning/education purpose.
+      </h5>
     </div>
   );
-}
+};
 
 export default App;
